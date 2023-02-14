@@ -42,22 +42,33 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 100;
+  int _counter = 1;
 
   void _incrementCounter() {
+    print("print function"); // print should n't be used production code
+    debugPrint("Cursor Inside the increment function"); 
     setState(() {
+      // making the object into dynamic one
       _counter++;
     });
+    debugPrint("Cursor is about to exit the increment function");
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( // Wrapping the entire screen
+    return Scaffold(
+      // Wrapping the entire screen
       appBar: AppBar(
-       title: Text(widget.title),
+        title: Text(
+          widget.title,
+          style: const TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
       ),
       body: Center(
-        child: Column(          
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(

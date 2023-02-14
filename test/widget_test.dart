@@ -8,7 +8,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:booking_app/main.dart';
+// import 'package:booking/main.dart'; // Actual path
+import '../lib/main.dart'; // Relative path
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
