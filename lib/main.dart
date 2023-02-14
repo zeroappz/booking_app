@@ -4,10 +4,12 @@ import 'package:flutter/material.dart';
 // import 'package:flutter/cupertino.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const BookingApp());
 }
 
-class MyApp extends StatelessWidget {
+class BookingApp extends StatelessWidget {
+  const BookingApp({Key? key}) : super(key: key);
+
   // Stateless - static widgets
   // Stateful - dynamic widgets
 
@@ -22,11 +24,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Ecommerce Application',
+      title: 'E-commerce Application',
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: 'Ecommerce Application'),
+      home: const MyHomePage(title: 'E-commerce Application'),
     );
   }
 }
@@ -40,7 +42,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 10;
+  int _counter = 100;
 
   void _incrementCounter() {
     setState(() {
@@ -59,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'You have increased the button this many times:',
+              'You have increased the button this many times: ',
             ),
             Text(
               '$_counter',
@@ -71,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.delete),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
