@@ -8,3 +8,5 @@ Flutter commands:
 
 Git Commands:
     git status
+    git add . --all
+    git commit -m "[Feat]: Dart fundamental programs"
