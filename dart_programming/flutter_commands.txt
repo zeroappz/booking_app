@@ -1,0 +1,10 @@
+Flutter commands:
+    flutter pub get
+    flutter packages get
+    flutter run --no-sound-null-safety
+    flutter analyze --no-fatal-infos
+    flutter clean && flutter pub get
+
+
+Git Commands:
+    git status
