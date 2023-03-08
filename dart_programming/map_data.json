@@ -1,0 +1,19 @@
+{
+    "status": true,
+    "age": 20,
+    "maxAge": 25,
+    "skills": [
+        "Python",
+        "Dart"
+    ],
+    "address": {
+        "home": "281, 2nd floor, vcx, Chennai",
+        "work": "281, 2nd floor, vcx, Salem"
+    },
+    "date": "2023-02-21",
+    "source": "https://algofusion.org",
+    "message": "Successfully fetched!",
+    "created_at": "2023-02-21:21:30:33",
+    "updated_at": "2023-02-21:21:40:33",
+    "info": "You are good to go!"
+}

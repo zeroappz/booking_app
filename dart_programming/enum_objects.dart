@@ -1,13 +1,13 @@
 // ENUM - constant objects
 // UpperCamelCase
-enum DayOfWeek { SUN, MON, TUE, WED, THURS, FRI, SAT }
+enum DayOfWeek { sun, mon, tue, wed, thurs, fri, sat }
 
-enum Screens { HOMEPAGE, PROFILEPAGE, LOGOUT, TERMS, SETTINGS }
+enum Screens { homePage, profilePage, logOut, termsConditions, settings }
 
 main() {
   print("Days of the week");
 
-  print(DayOfWeek.FRI);
+  print(DayOfWeek.fri);
   // Anonymous function or for loop
   // for (int i = 0; i < 10; i++) {}
 
