@@ -7,7 +7,7 @@
 // 'praveen' != 'Praveen' - case sensitive
 
 main() {
-  var mapObject = Map();
+  var mapObject = {};
   // Key : Value pairs
   mapObject['programming'] = 'Dart';
   mapObject['framework'] = 'Flutter';
@@ -103,7 +103,7 @@ main() {
     print("key: $key, value: $value");
   });
   print("****** Map Entry Access *****");
-  finalOutput.entries.forEach((item) {
+  for (var item in finalOutput.entries) {
     print("key: ${item.key}, value: ${item.value}");
-  });
+  }
 }

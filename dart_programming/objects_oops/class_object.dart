@@ -25,7 +25,7 @@ class ClassName {
   /// Constructor
   ClassName(String bd, dynamic year) {
     // class instance here using the keyword called this - dynamic instances
-    this.brand = bd;
+    brand = bd;
     print("\n");
     print("Constructor: My $pcType brand is $brand");
     _getData(year);
@@ -51,12 +51,12 @@ class ClassName {
   }
 
   /// Getter Setter
-  void set screen_size(num sz) {
-    this._screenSize = sz;
+  set screen_size(num sz) {
+    _screenSize = sz;
   }
 
-  void set battery_cap(num bc) {
-    this.batteryCapacity = bc;
+  set battery_cap(num bc) {
+    batteryCapacity = bc;
   }
 
   num get screen_size {
@@ -137,7 +137,7 @@ instances() {
   }
 
   /// Class Instantiation
-  ClassName preethi = new ClassName("Lg Gram 17", "2023");
+  ClassName preethi = ClassName("Lg Gram 17", "2023");
   print(preethi.instructions());
   preethi._contactInformation("Preethi", "preethi@gmail.com");
   preethi._screenSize = 17.0;

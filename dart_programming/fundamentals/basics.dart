@@ -26,7 +26,7 @@ main() {
 
   print(nameString);
   print("********");
-  print("I myself " + nameString + " who is taking this Flutter training");
+  print("I myself $nameString who is taking this Flutter training");
   print("********");
   // Dynamic Var objects
   var age = 20;
@@ -34,6 +34,6 @@ main() {
   var salary = 30.00;
   var year = 2023;
   print(
-      "Thanks for Registered with us ${nameString} in the year ${year} with an age of ${age}");
-  print("His mobile number is ${mobileNumber} and earning ${salary} per hour");
+      "Thanks for Registered with us $nameString in the year $year with an age of $age");
+  print("His mobile number is $mobileNumber and earning $salary per hour");
 }

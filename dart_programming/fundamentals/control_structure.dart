@@ -65,9 +65,9 @@ void main() {
 
   // For Each Loop - anonymous function
   print("******* For each Loop **********");
-  list.forEach((item) {
+  for (var item in list) {
     print("Name of a Person[$item] is:  $item");
-  });
+  }
 
   // Internet check - application - infinite execution
   bool isInternetAvailable = true;
