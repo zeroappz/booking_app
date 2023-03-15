@@ -4,6 +4,9 @@ Flutter commands:
     flutter run --no-sound-null-safety
     flutter analyze --no-fatal-infos
     flutter clean && flutter pub get
+    flutter pub add <Package Name>
+    flutter pub run flutter_launcher_icons (load app icon assets for all platforms)
+
 
 
 Git Commands:
