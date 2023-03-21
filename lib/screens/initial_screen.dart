@@ -1,4 +1,5 @@
 import 'package:booking_app/app_utils/app_lib.dart';
+import 'package:booking_app/screens/splash_screen.dart';
 
 class BookingApp extends StatelessWidget {
   const BookingApp({Key? key}) : super(key: key);
@@ -24,7 +25,8 @@ class BookingApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: const MyHomePage(title: AppConfig.appTitle),
+      // home: const MyHomePage(title: AppConfig.appTitle),
+      home: const SplashScreen(),
     );
   }
 }

@@ -6,7 +6,7 @@ class A {
 
   /// Constructor
   A(int val) {
-    this.value = val;
+    value = val;
     print("Constructor A is loading....");
   }
 
@@ -21,7 +21,7 @@ class B {
 
   /// Constructor
   B(int val) {
-    this.value = val;
+    value = val;
     print("Constructor B is loading....");
   }
 
@@ -36,7 +36,7 @@ class C {
 
   /// Constructor
   C(int val) {
-    this.value = val;
+    value = val;
     print("Constructor C is loading....");
   }
 

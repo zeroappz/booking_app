@@ -4,6 +4,7 @@
 export 'package:flutter/material.dart';
 
 /// Flutter External Packages
+export 'package:flutter_onboarding_slider/flutter_onboarding_slider.dart';
 
 /// Application Screens
 export 'package:booking_app/screens/home_page.dart';
