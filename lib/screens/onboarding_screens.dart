@@ -13,61 +13,43 @@ class OnBoardingScreen extends StatelessWidget {
       skipTextButton: const Text('Skip'),
       trailing: const Text('Sign In'),
       background: [
-        Image(
-          image: const AssetImage(ImagePath.onBoarding_1),
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-        ),
-        Image(
-          image: const AssetImage(ImagePath.onBoarding_2),
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-        ),
-        Image(
-          image: const AssetImage(
-            ImagePath.onBoarding_3,
-          ),
-          height: MediaQuery.of(context).size.height,
-          width: MediaQuery.of(context).size.width,
-        ),
+        // function / method
+        onLoadImages("assets/images/slide_1.png", context),
+        onLoadImages("assets/images/slide_2.png", context),
+        onLoadImages("assets/images/slide_3.png", context),
       ],
       totalPage: 3,
       speed: 2,
       pageBodies: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
-          child: Column(
-            children: const <Widget>[
-              SizedBox(
-                height: 480,
-              ),
-              Text('Description Text 1'),
-            ],
-          ),
-        ),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
-          child: Column(
-            children: const <Widget>[
-              SizedBox(
-                height: 480,
-              ),
-              Text('Description Text 2'),
-            ],
-          ),
-        ),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 40),
-          child: Column(
-            children: const <Widget>[
-              SizedBox(
-                height: 480,
-              ),
-              Text('Description Text 3'),
-            ],
-          ),
-        ),
+        onBoardingDescription(StringConstants.onBoardingDesc, 480.0, 40.0),
+        onBoardingDescription(StringConstants.onBoardingDesc, 480.0, 40.0),
+        onBoardingDescription(StringConstants.onBoardingDesc, 480.0, 40.0),
       ],
+    );
+  }
+
+  /// Function to load On Boarding Images
+  onLoadImages(imgObj, BuildContext context) {
+    debugPrint("**** inside onload function ****");
+    return Image(
+      image: AssetImage(imgObj),
+      height: MediaQuery.of(context).size.height * 0.6,
+      width: MediaQuery.of(context).size.width,
+    );
+  }
+
+  /// Onboarding Text Containers
+  onBoardingDescription(String desc, double imgH, double imgPD) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: imgPD),
+      child: Column(
+        children: <Widget>[
+          SizedBox(
+            height: imgH,
+          ),
+          Text(desc),
+        ],
+      ),
     );
   }
 }

@@ -11,5 +11,8 @@ class ImagePath {
   static const onBoarding_1 = "$assetsDir/slide_1.png";
   static const onBoarding_2 = "$assetsDir/slide_2.png";
   static const onBoarding_3 = "$assetsDir/slide_3.png";
+
+  /// Artist Image
+  static const artistImg = "$assetsDir/artist.jpg";
 }
 
