@@ -15,3 +15,4 @@ linter:
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
     avoid_relative_lib_imports: false
     slash_for_doc_comments: false
+    

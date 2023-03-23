@@ -11,7 +11,8 @@ void main() {
   /// Set your application to portrait mode
   SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then(
     ((value) => runApp(
-          const GalleryScreen(),
+          // const GalleryScreen(),
+          const DashBoardScreen(),
         )),
   ); // Class instantiation
 
